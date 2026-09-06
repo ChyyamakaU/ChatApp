@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 function Signup() {
   return (
     <>
-      <section>
-        <Link to="/" className="relative left-4 top-4 text-gray-700">
-          Back to signin
+      <section className="mx-3">
+        <Link to="/" className="relative left-4 text-xs md: text-sm top-4 text-gray-700">
+          Signin
         </Link>
 
         <div className="flex gap-1 py-4 mx-5 justify-center">
@@ -23,7 +23,7 @@ function Signup() {
           </p>
         </div>
 
-        <div className="w-full mx-auto max-w-md mt-5">
+        <div className="w-full mx-auto max-w-md mt-5 ">
           <form action="" className="">
             <label htmlFor="Name">Name</label> <br />
             <div className="flex flex-col md:flex-row gap-3">
@@ -94,7 +94,7 @@ function Signup() {
             </Link>
           </div>
         </div>
-           <div className="text-xs text-gray-700 flex flex-wrap gap-x-2 gap-y-1 justify-center mx-5 mt-24">
+           <div className="text-xs text-gray-700 flex flex-wrap gap-x-2 gap-y-1 justify-center mx-5 mb-3 mt-24">
           <p>About</p>
           <p>Get App</p>
           <p>Terms</p>
