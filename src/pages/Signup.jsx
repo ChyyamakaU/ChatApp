@@ -71,7 +71,7 @@ function Signup() {
             <div className="flex gap-1 items-center">
               <input type="checkbox" className="w-5 " required />
               <p className="text-xs md:text-sm text-gray-700 text-center  ">
-                By creating an account, you agree to our <span className="font-semibold hover:text-blue-600 hover:underline">Terms and Conditions </span>
+                By creating an account, you agree to our <Link to ="/Terms" className="font-semibold hover:text-blue-600 hover:underline">Terms and Conditions </Link>
                 and <Link to="/Privacy"  className="font-semibold hover:text-blue-600 hover:underline">Privacy Policy</Link>.
               </p>
             </div>
