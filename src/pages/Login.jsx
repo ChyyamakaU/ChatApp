@@ -6,14 +6,14 @@ import hero from "../assets/hero.jpg";
 function Login() {
   return (
     <>
-      <section>
+      <section className="mx-3 md:mx-8">
         <div className="flex gap-1 py-4 mx-5">
           <img src={chat} className="w-7" alt="" />
           <h1 className="text-[#352477] font-sans text-lg font-semibold">NU<span className="text-[#597e16] text-xl">D</span>GE</h1>
         </div>
 
-        <div className=" grid grid-cols-1 md:grid-cols-2 gap-10 mx-5 ">
-          <div>
+        <div className=" grid grid-cols-1 md:grid-cols-2 gap-28 mx-5 my-6">
+          <div >
             <div>
               <button className="flex gap-3 overflow-y-hidden items-center rounded-3xl px-3 py-2 my-2 w-full text-sm md:text-lg border border-gray-700">
                 <img className="w-4 " src={google} alt="Google logo" />
@@ -46,7 +46,7 @@ function Login() {
                 Log in
               </button>
 
-              <p className="text-sm text-gray-700 text-center  ">
+              <p className="text-xs md:text-sm text-gray-700 text-center  ">
                 By continuing you agree to our Terms and Condition, Privacy and
                 Use of Cookies.
               </p>
@@ -70,9 +70,20 @@ function Login() {
               <span className="text-[#3B2A80]">Real experiences.</span>
             </p>
             <img className="object-contain" src={hero} alt="" />
-
-          
           </div>
+        </div>
+
+
+        <div className="text-xs text-gray-700 flex flex-wrap gap-x-2 gap-y-1 justify-center mx-5 mt-24">
+          <p>About</p>
+          <p>Get App</p>
+          <p>Terms</p>
+          <p>Privacy</p>
+          <p>Careers</p>
+          <p>News</p>
+          <p>Business</p>
+          <p>Cookies</p>
+          <p>Developers</p>
         </div>
       </section>
     </>
