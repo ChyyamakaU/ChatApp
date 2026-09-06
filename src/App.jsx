@@ -6,6 +6,7 @@ import Profile from "./pages/Profile.jsx";
 import Signup from "./pages/Signup.jsx";
 import Privacy from "./pages/Privacy.jsx";
 import Terms from "./pages/Terms.jsx";
+import Forgotpassword from "./pages/Forgotpassword.jsx"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/Signup" element={<Signup />}></Route>
           <Route path="/Privacy" element={<Privacy/>}></Route>
           <Route path="/Terms" element={<Terms/>}></Route>
+           <Route path="/Forgotpassword" element={<Forgotpassword/>}></Route>
         </Routes>
       </BrowserRouter>
     </>

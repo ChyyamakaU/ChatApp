@@ -4,7 +4,10 @@ function Signup() {
   return (
     <>
       <section className="mx-3 bg-[#FAF9F6]">
-        <Link to="/" className="relative left-4 text-xs md:text-sm top-4 text-gray-700">
+        <Link
+          to="/"
+          className="relative left-4 text-xs md:text-sm top-4 text-gray-700"
+        >
           Signin
         </Link>
 
@@ -24,7 +27,7 @@ function Signup() {
         </div>
 
         <div className="w-full mx-auto max-w-md mt-5 ">
-          <form action="" className="">
+          <form action="">
             <label htmlFor="Name">Name</label> <br />
             <div className="flex flex-col md:flex-row gap-3">
               <input
@@ -71,8 +74,21 @@ function Signup() {
             <div className="flex gap-1 items-center">
               <input type="checkbox" className="w-5 " required />
               <p className="text-xs md:text-sm text-gray-700 text-center  ">
-                By creating an account, you agree to our <Link to ="/Terms" className="font-semibold hover:text-blue-600 hover:underline">Terms and Conditions </Link>
-                and <Link to="/Privacy"  className="font-semibold hover:text-blue-600 hover:underline">Privacy Policy</Link>.
+                By creating an account, you agree to our{" "}
+                <Link
+                  to="/Terms"
+                  className="font-semibold hover:text-blue-600 hover:underline"
+                >
+                  Terms and Conditions{" "}
+                </Link>
+                and{" "}
+                <Link
+                  to="/Privacy"
+                  className="font-semibold hover:text-blue-600 hover:underline"
+                >
+                  Privacy Policy
+                </Link>
+                .
               </p>
             </div>
             <button
@@ -94,7 +110,7 @@ function Signup() {
             </Link>
           </div>
         </div>
-           <div className="text-xs text-gray-700 flex flex-wrap gap-x-2 gap-y-1 justify-center mx-5 mb-3 mt-24">
+        <div className="text-xs text-gray-700 flex flex-wrap gap-x-2 gap-y-1 justify-center mx-5 mb-3 mt-24">
           <p>About</p>
           <p>Get App</p>
           <p>Terms</p>
