@@ -10,11 +10,11 @@ function Login() {
       <p>Real people. Real experiences</p>
 
       <div>
-        <button className="flex gap-3 overflow-y-hidden items-center rounded-3xl px-5 py-2 my-2 w-full text-xs md:text-sm border border-gray-700">
+        <button className="flex gap-3 overflow-y-hidden items-center rounded-3xl px-3 py-2 my-2 w-full text-sm md:text-lg border border-gray-700">
           <img className="w-4 " src={google} alt="Google logo" />
           <span>Sign in with Google</span>
         </button>
-        <button className="flex gap-3 items-center rounded-3xl  px-5 py-2 w-full my-2 text-xs md:text-sm border border-gray-700">
+        <button className="flex gap-3 items-center rounded-3xl  px-3 py-2 w-full my-2 text-sm md:text-lg border border-gray-700">
           <img className="w-5 " src={apple} alt="apple logo" />
           <span>Sign in with Apple</span>
         </button>
@@ -24,16 +24,21 @@ function Login() {
 
       <form action="">
         
-        <input className="border border-gray-700 " type="text" placeholder="Email or Username" required />
+        <input className="border border-gray-700 rounded-lg px-3 py-3 w-full my-2" type="text" placeholder="Email or Username" required />
 
-        <label htmlFor="password">Password</label> <br />
-        <input type="text" placeholder="Password" required />
+       
+        <input className="border border-gray-700 rounded-lg px-3 py-3 w-full my-2" type="text" placeholder="Password" required />
 
-        <button>Log in</button>
+        <button  className="flex gap-3 items-center rounded-3xl bg-[#352477] text-white justify-center px-3 py-2  w-full my-6 text-sm md:text-lg border border-gray-700">Log in</button>
 
-        <p> forgot password?</p>
+        <div className="flex gap-2 justify-center items-center">
+          <p className="text-center text-sm text-gray-700 "> Forgot password?</p>
+          <p className="text-blue-600 text-sm underline">link</p>
+        </div>
       </form>
 
+
+<p>Dont have an account yet?</p>
       <p>Sign Up</p>
     </>
   );
