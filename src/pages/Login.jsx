@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 function Login() {
   return (
     <>
-      <section className="mx-3 md:mx-8">
+      <section className="mx-3 md:mx-8 bg-[#FAF9F6]">
         <div className="flex gap-1 py-4 mx-5">
           <img src={chat} className="w-7" alt="" />
           <h1 className="text-[#352477] font-sans text-lg font-semibold">

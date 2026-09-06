@@ -4,6 +4,7 @@ import Login from "./pages/Login.jsx";
 import Chat from "./pages/Chat.jsx";
 import Profile from "./pages/Profile.jsx";
 import Signup from "./pages/Signup.jsx";
+import Privacy from "./pages/Privacy.jsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/Chat" element={<Chat />}></Route>
           <Route path="/Profile" element={<Profile />}></Route>
           <Route path="/Signup" element={<Signup />}></Route>
+          <Route path="/Privacy" element={<Privacy/>}></Route>
         </Routes>
       </BrowserRouter>
     </>

@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 function Signup() {
   return (
     <>
-      <section className="mx-3">
-        <Link to="/" className="relative left-4 text-xs md: text-sm top-4 text-gray-700">
+      <section className="mx-3 bg-[#FAF9F6]">
+        <Link to="/" className="relative left-4 text-xs md:text-sm top-4 text-gray-700">
           Signin
         </Link>
 
@@ -71,8 +71,8 @@ function Signup() {
             <div className="flex gap-1 items-center">
               <input type="checkbox" className="w-5 " required />
               <p className="text-xs md:text-sm text-gray-700 text-center  ">
-                By creating an account, you agree to our Terms and Conditions
-                and Privacy Policy.
+                By creating an account, you agree to our <span className="font-semibold hover:text-blue-600 hover:underline">Terms and Conditions </span>
+                and <Link to="/Privacy"  className="font-semibold hover:text-blue-600 hover:underline">Privacy Policy</Link>.
               </p>
             </div>
             <button
@@ -88,7 +88,7 @@ function Signup() {
             <p> Already have an account?</p>
             <Link
               to="/"
-              className="font-semibold underline hover:text-blue-600"
+              className="font-semibold underline hover:text-blue-600 hover:underline"
             >
               Log in
             </Link>
