@@ -3,7 +3,6 @@ import dots from "../assets/dots.png";
 import friend from "../assets/friend.jpg";
 import search from "../assets/search.png";
 
-
 function Leftside() {
   return (
     <>
@@ -22,27 +21,35 @@ function Leftside() {
           </div>
 
           <div className="flex items-center gap-2 py-4 px-4 bg-[#352477]">
-            <img src={search} className="w-5 relative left-10 text-white  rounded-full" alt="" />
+            <img
+              src={search}
+              className="w-5 relative left-10 text-white  rounded-full"
+              alt=""
+            />
             <input
               type="text"
               placeholder="Search here..."
-              className="bg-transparent text-white  placeholder:text-gray-600 px-10 rounded-2xl py-2 w-full focus:outline-none"
+              className="bg-transparent text-white  placeholder:text-gray-300 px-10 rounded-2xl py-2 w-full focus:outline-none"
             />
           </div>
 
-          <div className="scroll-y-5">
+          <div className="flex flex-col h-[70%] overflow-y-scroll">
             <h3>Friends</h3>
 
-            <div>
-              <img src={friend} className=" " alt="" />
+            <div className="bg-amber-400 flex   items-center gap-3">
+              <img
+                src={friend}
+                className=" w-9 h-9 object-fit aspect-ratio-1/1 rounded-full"
+                alt=""
+              />
 
-              <div>
-                <p>John Doe</p>
-                <p>Online</p>
-              </div>
-
-              <div>
-                <p>Hello, how are you?</p>
+              <div className=" text-sm flex flex-col hover:bg-[#3e298f] hover:text-white">
+                <div className="">
+                  <p className="font-semibold">John Doe</p>
+                  <p className="font-normal text-gray-600 hover:text-white">
+                    Hello, how are you?
+                  </p>
+                </div>
               </div>
             </div>
           </div>
