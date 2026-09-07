@@ -33,10 +33,12 @@ function Leftside() {
             />
           </div>
 
-          <div className="flex flex-col h-[70%] overflow-y-scroll">
-            <h3>Friends</h3>
+          <div className="flex flex-col h-[70%] overflow-y-scroll px-5">
+            {/* <h3>Friends</h3> */}
 
-            <div className="bg-amber-400 flex   items-center gap-3">
+            {Array(10).fill("").map((item, index)=>(
+
+              <div key={index} className="flex  py-2 items-center gap-3">
               <img
                 src={friend}
                 className=" w-9 h-9 object-fit aspect-ratio-1/1 rounded-full"
@@ -44,14 +46,13 @@ function Leftside() {
               />
 
               <div className=" text-sm flex flex-col hover:bg-[#3e298f] hover:text-white">
-                <div className="">
-                  <p className="font-semibold">John Doe</p>
-                  <p className="font-normal text-gray-600 hover:text-white">
-                    Hello, how are you?
-                  </p>
-                </div>
+                <p className="font-semibold">John Doe</p>
+                <p className="font-normal text-gray-600 hover:text-white">
+                  Hello, how are you?
+                </p>
               </div>
             </div>
+            ))}
           </div>
         </div>
       </section>
