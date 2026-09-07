@@ -3,14 +3,11 @@ import apple from "../assets/apple-logo.png";
 import google from "../assets/google.png";
 import hero from "../assets/hero.jpg";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+// import { useState } from "react";
 
 function Login() {
 
-const [current, setCurrent]= useState("Signup")
-
-
-
+// const [current, setCurrent]= useState("Signup")
 
   return (
     <>
@@ -95,7 +92,7 @@ const [current, setCurrent]= useState("Signup")
                 <Link
                   to="signup"
                   className="font-semibold underline hover:text-blue-600"
-                  onClick={()=> setCurrent("Login")}
+                  // onClick={()=> setCurrent("Login")}
                 >
                   Sign Up
                 </Link>
