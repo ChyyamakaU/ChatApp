@@ -5,6 +5,7 @@ import hero from "../assets/hero.jpg";
 import { Link } from "react-router-dom";
 // import { useState } from "react";
 
+
 function Login() {
 
 // const [current, setCurrent]= useState("Signup")
@@ -52,12 +53,12 @@ function Login() {
                   required
                 />
 
-                <button
+                <Link to ="Chat"
                   type="submit"
                   className="flex gap-3 items-center rounded-3xl bg-[#352477] text-white justify-center px-3 py-2  w-full my-6 text-sm md:text-lg border border-gray-700"
                 >
                   Sign in
-                </button>
+                </Link>
 
                 <div className="flex gap-1 items-center">
                   <input type="checkbox" className="w-5 " required />

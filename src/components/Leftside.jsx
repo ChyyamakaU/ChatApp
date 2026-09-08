@@ -64,9 +64,9 @@ function Leftside() {
                     alt=""
                   />
 
-                  <div className=" text-sm flex flex-col hover:bg-[#3e298f] hover:text-white">
+                  <div className=" text-sm flex flex-col hover:bg-[#ddd8e6] hover:text-[#352477]">
                     <p className="font-semibold">John Doe</p>
-                    <p className="font-normal text-gray-600 hover:text-white">
+                    <p className="font-normal text-gray-600 hover:text-[#352477]">
                       Hello, how are you?
                     </p>
                   </div>

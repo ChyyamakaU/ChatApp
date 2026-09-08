@@ -1,6 +1,6 @@
 import friends from "../assets/friends.jpg";
 import young from "../assets/Young.jpg";
-// import Link from "react-router-dom";
+import {Link} from "react-router-dom";
 
 function Rightside() {
   return (
@@ -58,12 +58,12 @@ function Rightside() {
               />
             </div>
           </div>
-          <button
+          <Link to = "/"
             type="submit"
             className="absolute bottom-6  translate-x-1/2 rounded-3xl bg-[#352477] text-white justify-center px-3 py-2  w-3/6 my-8 text-sm md:text-lg border border-gray-700"
           >
             Sign Out
-          </button>
+          </Link>
         </div>
       </section>
     </>
