@@ -15,8 +15,26 @@ function Leftside() {
                 NU<span className="text-[#597e16] text-xl">D</span>GE
               </h1>
             </div>
-            <div>
-              <img src={dots} className="w-5" alt="" />
+            <div className="relative group">
+              <img src={dots} className="w-5 cursor-pointer" alt="Menu" />
+
+              <div className="absolute top-full right-0 hidden group-hover:block p-2 w-32 bg-[#efeef3] text-[#352477] rounded-lg text-xs md:text-sm z-50">
+                <p className="py-2 cursor-pointer hover:bg-[#ddd8e6] rounded">
+                  Edit Profile
+                </p>
+
+                <hr className="border-[#352477]" />
+
+                <p className="py-2 cursor-pointer hover:bg-[#ddd8e6] rounded">
+                  Settings
+                </p>
+
+                <hr className="border-[#352477]" />
+
+                <p className="py-2 cursor-pointer hover:bg-[#ddd8e6] rounded">
+                  Sign Out
+                </p>
+              </div>
             </div>
           </div>
 
@@ -36,23 +54,24 @@ function Leftside() {
           <div className="flex flex-col h-[60%] overflow-y-scroll px-5">
             {/* <h3>Friends</h3> */}
 
-            {Array(10).fill("").map((item, index)=>(
+            {Array(10)
+              .fill("")
+              .map((item, index) => (
+                <div key={index} className="flex  py-2 items-center gap-3">
+                  <img
+                    src={friends}
+                    className=" w-9 h-9 object-fit aspect-ratio-1/1 rounded-full"
+                    alt=""
+                  />
 
-              <div key={index} className="flex  py-2 items-center gap-3">
-              <img
-                src={friends}
-                className=" w-9 h-9 object-fit aspect-ratio-1/1 rounded-full"
-                alt=""
-              />
-
-              <div className=" text-sm flex flex-col hover:bg-[#3e298f] hover:text-white">
-                <p className="font-semibold">John Doe</p>
-                <p className="font-normal text-gray-600 hover:text-white">
-                  Hello, how are you?
-                </p>
-              </div>
-            </div>
-            ))}
+                  <div className=" text-sm flex flex-col hover:bg-[#3e298f] hover:text-white">
+                    <p className="font-semibold">John Doe</p>
+                    <p className="font-normal text-gray-600 hover:text-white">
+                      Hello, how are you?
+                    </p>
+                  </div>
+                </div>
+              ))}
           </div>
         </div>
       </section>
