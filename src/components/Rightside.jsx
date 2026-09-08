@@ -4,12 +4,12 @@ function Rightside() {
 
   return (
     <>
-      <section>
+      <section className="col-span-1">
 
 <div>
 
 
-
+<p>hello</p>
 
   
 </div>

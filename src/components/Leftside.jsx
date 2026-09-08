@@ -1,6 +1,6 @@
 import chat from "../assets/chat.png";
 import dots from "../assets/dots.png";
-import friend from "../assets/friend.jpg";
+import friends from "../assets/friends.jpg";
 import search from "../assets/search.png";
 
 function Leftside() {
@@ -8,7 +8,7 @@ function Leftside() {
     <>
       <section className="col-span-1 ">
         <div>
-          <div className="flex justify-between items-center mx-4 ">
+          <div className="flex justify-between items-center  ">
             <div className="flex gap-1 py-4 mx-5">
               <img src={chat} className="w-7" alt="" />
               <h1 className="text-[#352477] font-sans text-lg font-semibold">
@@ -33,14 +33,14 @@ function Leftside() {
             />
           </div>
 
-          <div className="flex flex-col h-[70%] overflow-y-scroll px-5">
+          <div className="flex flex-col h-[60%] overflow-y-scroll px-5">
             {/* <h3>Friends</h3> */}
 
             {Array(10).fill("").map((item, index)=>(
 
               <div key={index} className="flex  py-2 items-center gap-3">
               <img
-                src={friend}
+                src={friends}
                 className=" w-9 h-9 object-fit aspect-ratio-1/1 rounded-full"
                 alt=""
               />
