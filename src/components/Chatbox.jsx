@@ -30,7 +30,7 @@ function Chatbox() {
             />
 
             <div className="max-w-[70%]">
-              <p className="bg-white rounded-lg px-4 py-2 text-sm">
+              <p className="bg-[#ddd9e6] text-[#352477] rounded-lg px-4 py-2 text-sm">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Deserunt tempora, vero reprehenderit natus recusandae officiis
                 qui vel laudantium conse.
@@ -42,7 +42,7 @@ function Chatbox() {
 
           <div className="flex items-end justify-end gap-2 mb-4">
             <div className="max-w-[70%]">
-              <p className="bg-[#352477] text-white rounded-lg px-4 py-2 text-sm">
+              <p className="bg-[#352477] text-[#efeef3] rounded-lg px-4 py-2 text-sm">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Deserunt tempora, vero reprehenderit natus recusandae officiis
                 qui vel laudantium conse.
