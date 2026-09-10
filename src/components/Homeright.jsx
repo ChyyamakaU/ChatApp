@@ -42,6 +42,18 @@ function Homeright() {
           </p>
           <img src={star} className="w-5 h-5 " alt="" />
         </div>
+{/* 
+        <div className="text-xs text-gray-700 flex flex-wrap gap-x-2 gap-y-1 justify-center mx-5 mt-24">
+            <p>About</p>
+            <p>Get App</p>
+            <p>Terms</p>
+            <p>Privacy</p>
+            <p>Careers</p>
+            <p>News</p>
+            <p>Business</p>
+            <p>Cookies</p>
+            <p>Developers</p>
+          </div> */}
       </section>
     </>
   );
