@@ -7,7 +7,7 @@ import friends from "../assets/friends.jpg";
 function Mainhome() {
   return (
     <>
-      <section className="col-span-3 bg-[#ddd8e6]">
+      <section className="col-span-4 bg-[#ddd8e6]">
         <div>
           <div className="text-[#352477] text-center py-3 md:py-5">
             <h2 className="text-xl md:text-3xl font-bold font-mono">
@@ -73,10 +73,10 @@ function Mainhome() {
               Recent Chats
             </h3>
 
-            {Array(3)
+            {Array(4)
               .fill("")
               .map((item, index) => (
-                <div key={index} className="flex justify-between">
+                <div key={index} className="flex justify-between items-center border-b border-gray-300 ">
                   <div className="flex  py-2 items-center gap-3">
                     <img
                       src={friends}
