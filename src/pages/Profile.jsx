@@ -42,7 +42,7 @@ const handleImageChange = (e) => {
                     <img 
                       src= {images? URL.createObjectURL(images) : user}
                       alt="profile avatar"
-                      className="w-20 h-20 rounded-full"
+                      className="w-20 h-20 object-fill rounded-full"
                     />
                   </div>
 
