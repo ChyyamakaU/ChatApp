@@ -7,7 +7,7 @@ import Signup from "./pages/Signup.jsx";
 import Privacy from "./pages/Privacy.jsx";
 import Terms from "./pages/Terms.jsx";
 import Forgotpassword from "./pages/Forgotpassword.jsx";
-import HomeLeft from "./components/HomeLeft.jsx";
+import Home from "./pages/Home.jsx";
 
 
 
@@ -24,7 +24,7 @@ function App() {
           <Route path="/Privacy" element={<Privacy />}></Route>
           <Route path="/Terms" element={<Terms />}></Route>
           <Route path="/Forgotpassword" element={<Forgotpassword />}></Route>
-          <Route path="/HomeLeft" element={<HomeLeft />}></Route>
+          <Route path="/Home" element={<Home />}></Route>
         
         </Routes>
       </BrowserRouter>
