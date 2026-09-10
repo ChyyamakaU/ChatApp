@@ -73,7 +73,7 @@ function Mainhome() {
               Recent Chats
             </h3>
 
-            {Array(4)
+            {Array(3)
               .fill("")
               .map((item, index) => (
                 <div key={index} className="flex justify-between items-center border-b border-gray-300 ">
