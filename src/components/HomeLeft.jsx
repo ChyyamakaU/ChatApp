@@ -4,6 +4,7 @@ import profile from "../assets/profile.png";
 import settings from "../assets/setting.png";
 import exit from "../assets/exit.png";
 import chats from "../assets/chat (1).png";
+import { Link } from "react-router-dom";
 
 function HomeLeft() {
   return (
@@ -24,15 +25,17 @@ function HomeLeft() {
                 <p className="text-[#ddd8e6]">Home</p>
               </div>
 
-              <div className="flex gap-4 items-align py-3">
+              <Link
+              to="/Chat" className="flex gap-4 items-align py-3">
                 <img src={chats} className="w-5 h-5" alt="" />
                 <p className="text-[#ddd8e6]">Chat</p>
-              </div>
+              </Link>
 
-              <div className="flex gap-4 items-align pb-3">
+              <Link
+              to="/Profile" className="flex gap-4 items-align pb-3">
                 <img src={profile} className="w-5 h-5" alt="" />
                 <p className="text-[#ddd8e6]">Profile</p>
-              </div>
+              </Link>
 
               <div className="flex gap-4 items-align">
                 <img src={settings} className="w-5 h-5" alt="" />
@@ -40,10 +43,12 @@ function HomeLeft() {
               </div>
             </div>
 
-            <div className="flex gap-4 items-align absolute bottom-0 p-6">
+            <Link 
+            to="/"
+            className="flex gap-4 items-align absolute bottom-0 p-6">
               <img src={exit} className="w-5 h-5" alt="" />
               <p className="text-[#ddd8e6]">LogOut</p>
-            </div>
+            </Link>
           </div>
         </div>
       </section>

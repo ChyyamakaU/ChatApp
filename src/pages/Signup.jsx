@@ -91,13 +91,14 @@ function Signup() {
                 .
               </p>
             </div>
-            <button
+            <Link
+            to="/Profile"
               type="submit"
               className="flex gap-3 items-center rounded-3xl bg-[#352477] text-white justify-center px-3 py-2  w-full my-6 text-sm md:text-lg border border-gray-700"
             >
               {" "}
               Create an Account
-            </button>
+            </Link>
           </form>
 
           <div className="text-center py-5 text-sm text-gray-700">

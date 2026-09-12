@@ -1,6 +1,7 @@
 import user from "../assets/user.png";
 import chat from "../assets/chat.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Profile() {
 
@@ -52,11 +53,11 @@ const handleImageChange = (e) => {
                 </label>
 
                 <div className="mb-5">
-                  <label className="block text-sm font-medium mb-2">Name</label>
+                  <label className="block text-sm font-medium mb-2">UserName</label>
 
                   <input
                     type="text"
-                    placeholder="Enter your name"
+                    placeholder="Enter your username"
                     required
                     className="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-[#352477]"
                   />
@@ -73,12 +74,13 @@ const handleImageChange = (e) => {
                   ></textarea>
                 </div>
 
-                <button
+                <Link
+                to="/Home"
                   type="submit"
-                  className="w-full bg-[#352477] text-white py-3 rounded-lg font-medium hover:bg-[#291d5e] transition"
+                  className="w-full bg-[#352477] text-white py-3 px-3 rounded-lg font-medium hover:bg-[#291d5e] transition"
                 >
                   Save Changes
-                </button>
+                </Link>
               </form>
             </div>
             <div className="flex flex-col items-center justify-center w-1/3">
